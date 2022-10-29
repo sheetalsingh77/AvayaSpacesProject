@@ -1,0 +1,14 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:propertyName="alpha"
+    android:repeatCount="infinite"
+        android:valueFrom="0.15"
+        android:valueTo="1.0"
+    android:repeatMode="reverse"
+    android:valueType="floatType" />
+</set>
+
+<!--    android:valueFrom="#393749"-->
+<!--    android:valueTo="#00000000"-->
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.avaya.spaces.conference.ui.RelativeLayoutOpaque xmlns:android="http://schemas.android.com/apk/res/android"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen_opaque"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:id="@+id/local_video_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <com.avaya.spacescsdk.services.call.ui.CallSurfaceView
+        android:id="@+id/fullscreen_remote_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="@string/starting_video_call"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <com.avaya.spacescsdk.services.call.ui.TouchImageView
+        android:id="@+id/screen_sharing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/av_extra_controls_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/lightGray"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/conference_recording_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_conference_record_control"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+
+    <!--</com.avaya.spaces.conference.ui.RelativeLayoutOpaque>-->
+</RelativeLayout>

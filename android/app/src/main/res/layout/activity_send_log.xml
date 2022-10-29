@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:padding="0dp"
+    android:orientation="vertical"
+    tools:context=".ui.SendLogActivity">
+
+   <androidx.appcompat.widget.AppCompatEditText
+       android:id="@+id/edtTextEmail"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Enter email"
+       android:text=""
+       />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/btnSendLogs"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:text="Send Log"/>
+</LinearLayout>

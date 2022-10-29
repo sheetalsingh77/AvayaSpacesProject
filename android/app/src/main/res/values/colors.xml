@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="lightGray">#D3D3D3</color>
+
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_800">#424242</color>
+
+    <!-- Barcode -->
+    <color name="transparent">#000000</color>
+
+    <color name="list_item_title_text_color">#000000</color>
+    <color name="list_item_subtitle_text_color">@color/gray_500</color>
+    <color name="member_raised_hand_bg">#FBE4C5</color>
+    <color name="color_background">#ffffff</color>
+    <color name="our_message_background">#FCE4C4</color>
+    <color name="our_message_border_color">#FCE4C4</color>
+    <color name="their_message_background">#f2f2f7</color>
+    <color name="their_message_color_border">#f2f2f7</color>
+    <color name="attachment_container_background">#e0f3f4</color>
+    <color name="task_complete">#4baa39</color>
+    <color name="task_overdue">#fb3024</color>
+    <color name="task_today">#f7951d</color>
+    <color name="task_normal">#000000</color>
+    <color name="color_on_surface">#000000</color>
+</resources>

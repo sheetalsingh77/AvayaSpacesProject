@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linearLayoutView">
+
+    <RelativeLayout
+        android:id="@+id/outer_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp">
+
+        <ImageView
+            android:id="@+id/userpic_left"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="6dp"
+            android:paddingEnd="6dp"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/userpic_right"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_toStartOf="@+id/userpic_right"
+            android:layout_toEndOf="@+id/userpic_left"
+            android:textColor="#83858d"
+            android:textSize="12sp"
+            tools:text="@tools:sample/full_names" />
+
+        <LinearLayout
+            android:id="@+id/inner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@+id/username"
+            android:layout_toStartOf="@+id/userpic_right"
+            android:layout_toEndOf="@+id/userpic_left"
+            android:orientation="vertical"
+            tools:gravity="end">
+
+            <LinearLayout
+                android:id="@+id/message_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="32dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp"
+                tools:background="@drawable/message_background_ours">
+
+                <TextView
+                    android:id="@+id/message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:minWidth="32dp"
+                    android:padding="8dp"
+                    tools:maxLength="256"
+                    tools:text="@tools:sample/lorem/random" />
+
+                <LinearLayout
+                    android:id="@+id/attachment_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_stamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inner_container"
+            android:layout_toStartOf="@+id/userpic_right"
+            android:layout_toEndOf="@+id/userpic_left"
+            android:paddingBottom="4dp"
+            android:textColor="#9197a9"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="@tools:sample/date/hhmm"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

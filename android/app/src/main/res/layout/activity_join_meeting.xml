@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.join.JoinMeetingActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/meeting_details_label"
+            style="@style/JoinByPhoneHeader"
+            android:text="@string/meeting_details" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/meeting_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:minHeight="24dp"
+            android:hint="@string/prompt_meeting_url"
+            android:text="Spaces Room &amp; Mobile Development"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/display_name_label"
+            style="@style/JoinByPhoneHeader"
+            android:text="@string/display_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/display_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/display_name"
+            android:inputType="textPersonName"
+            android:maxLength="512"
+            android:selectAllOnFocus="true" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/meeting_settings_label"
+            style="@style/JoinByPhoneHeader"
+            android:text="@string/meeting_settings" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/auto_join_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:visibility="gone"
+            android:text="@string/auto_join_the_live_meeting" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/block_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:checked="true"
+            android:text="@string/block_my_camera_when_joining" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/mute_microphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:checked="true"
+            android:text="@string/mute_my_microphone_when_joining" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/terms_conditions_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            tools:text="@string/join_meeting_terms_conditions_android" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/join_meeting_as_guest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="32dp"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/join_meeting" />
+
+    </LinearLayout>
+</ScrollView>

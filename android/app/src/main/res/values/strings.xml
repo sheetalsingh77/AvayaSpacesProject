@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">AvayaSpacesPRoject</string>
+
+        <!--Login-->
+        <string name="joining_as_guest">Join as a guest</string>
+        <string name="onboarding_join_guest_message">To get started, tap on the meeting link in the invitation you received.</string>
+        <string name="onboarding_sign_in">Sign In or Create Account</string>
+        <string name="join_meeting">Join Meeting</string>
+        <string name="sign_in_create_account">Sign In or Create Account</string>
+        <string name="tap_on_your_link">To get started,\ntap on the meeting link in\nthe invitation you received.</string>
+        <string name="join_meeting_terms_conditions">By joining Avaya Spaces you agree to our <a href="https://spaces.avayacloud.com/toc">Terms of Service</a> and <a href="https://spaces.avayacloud.com/privacy">Privacy Policy</a></string>
+        <string name="join_meeting_terms_conditions_android">By joining Avaya Spaces you agree to our <![CDATA[<a href="https://spaces.avayacloud.com/toc">Terms of Service</a> and <a href="https://spaces.avayacloud.com/privacy">Privacy Policy</a>]]></string>
+        <string name="sign_out">Sign Out</string>
+        <string name="sign_out_confirmation">Are you sure you want to sign out?</string>
+
+
+        <!-- SECTION: Files and Attachments -->
+        <string name="attachment">Attachment</string>
+        <string name="attachments">Attachments</string>
+        <string name="attach">Attach…</string>
+        <!-- Section heading in view for modifying a task or a post message. -->
+        <string name="attach_files">Attach Files</string>
+        <string name="link">Link</string>
+        <string name="shared_file">shared a file</string>
+        <string name="shared_some_files">shared some files</string>
+        <string name="has_shared_file">has shared a file</string>
+        <string name="shared_files">shared files %1$s</string>
+        <string name="has_shared_link">has shared a link</string>
+        <string name="shared_link">shared a link</string>
+        <string name="shared_image">shared an image</string>
+        <string name="shared_video">shared a video</string>
+        <string name="shared_x_files">shared %1$d files</string>
+        <string name="shared_x_links">shared %1$d links</string>
+        <string name="shared_x_images">shared %1$d images</string>
+        <string name="shared_x_videos">shared %1$d videos</string>
+        <string name="unrecognized_file">This type of file is not known or no suitable application is installed.</string>
+        <string name="cannot_open_file">Cannot open file</string>
+        <string name="file_too_big">File is too big</string>
+        <string name="failed_to_load_file">Failed to load file</string>
+        <string name="cannot_preview_file">This file cannot be previewed</string>
+        <string name="cannot_view_file">This file cannot be viewed</string>
+        <string name="failed_prepare_attachment">Failed to prepare attachment</string>
+        <string name="icloud_drive">iCloud Drive</string>
+        <string name="photo_gallery">Photo gallery</string>
+        <string name="take_photo">Take a photo</string>
+
+        <!-- SECTION: Meetings -->
+        <string name="meeting">Meeting</string>
+        <string name="live_meeting">Live Meeting</string>
+        <!--Meeting -->
+
+
+        <!--spaces API meeting url -->
+        <!--            <string name="meeting_url">https://spaces.avayacloud.com/spaces/5eecfda30da7fa05033f18ef</string>-->
+        <!--        <string name="meeting_url">https://spaces.zang.io/u/kulkarni46@avaya.com?videoMode=expanded&amp;videoStart=true</string>-->
+        <!--    <string name="meeting_url">https://spaces.zang.io/u/kbhate@avaya.com?videoMode=expanded&amp;videoStart=true</string>-->
+        <!--    <string name="meeting_url">https://logantesting.esna.com/spaces/604f50ff03036729630f5571</string>-->
+        <!--    <string name="meeting_url">https://spaces.zang.io/spaces/5edf802e7bb5ce862033be9f</string>-->
+        <!--    <string name="meeting_url">"https://spaces.avayacloud.com/spaces/5fa2c2844da02478eed2b402"</string>-->
+        <string name="meeting_url">"https://spaces.avayacloud.com/spaces/5ff311ce213e5d2209462030"</string>
+
+        <!--    <string name="meeting_url">"https://spaces.zang.io/spaces/invites/6034eb648f53e13daa59cc2a/join?pwd=15372540e5bd15f03ce456695fcb19af&amp;inviteInfo=eyJzcGFjZU5hbWUiOiJrYWx5YW5pIHRlc3QiLCJpbnZpdGVyTmFtZSI6IkthbHlhbmkgQmhhdGUiLCJpbnZpdGVyRW1haWwiOiJrYmhhdGVAYXZheWEuY29tIn0="</string>-->
+        <string name="meeting_details">Meeting Details</string>
+        <string name="prompt_meeting_url">Resolving Meeting Link</string>
+        <string name="display_name">Display Name</string>
+        <string name="meeting_settings">Meeting Settings</string>
+        <string name="auto_join_the_live_meeting">Auto-join the live meeting</string>
+        <string name="block_my_camera_when_joining">Block my camera when joining</string>
+        <string name="mute_my_microphone_when_joining">Mute my microphone when joining</string>
+        <string name="join_as_guest">Join as Guest</string>
+        <string name="share">Share</string>
+        <string name="leave">Leave</string>
+        <string name="unmute">Unmute</string>
+        <string name="disallow">Disallow</string>
+        <string name="block">Block</string>
+        <string name="allow">Allow</string>
+        <string name="allow_camera">Allow Camera</string>
+        <string name="block_camera">Block Camera</string>
+        <string name="record">Record</string>
+        <string name="speaker">Speaker</string>
+        <string name="mute_all">Mute all</string>
+        <string name="flip">Flip</string>
+        <string name="starting_video_call">Starting video call</string>
+        <string name="invalid_username">Please enter valid username</string>
+        <string name="invalid_password">Please enter valid password</string>
+        <string name="starting_audio_call">Starting audio call</string>
+        <string name="cancel">Cancel</string>
+        <string name="ok">Ok</string>
+        <string name="end_meeting_dialog_message">Are you sure you want to end this live meeting?</string>
+        <string name="unmute_audio">Unmute audio</string>
+        <string name="mute">Mute</string>
+        <string name="mute_audio">Mute audio</string>
+        <string name="password_hint">Password</string>
+        <string name="enter_your_name">Enter your name</string>
+        <string name="invalid_meeting_url">Not a valid meeting url</string>
+
+        <string name="password_required">Password is required to access this space!</string>
+        <string name="wrong_password">Space Password is wrong!</string>
+        <string name="guest_login">Guest Login</string>
+        <string name="user_pass_login">Username Password Login</string>
+        <string name="sign_in">Sign In</string>
+        <string name="meeting_pin_hint">Enter meeting pin</string>
+        <string name="username_hint">Email / Phone</string>
+        <string name="oauth_login">Enterprise SSO Login</string>
+        <string name="connect">Connect</string>
+
+
+        <string name="allow_unmute">Allow to unmute</string>
+        <string name="remove">Remove</string>
+        <string name="leave_space">Leave Space</string>
+        <string name="its_me">It\'s Me</string>
+        <string name="remove_member_confirmation">Do you want to remove %1$s from %2$s?</string>
+        <string name="no_longer_have_access">Sorry, you no longer have access to \'%1$s\'</string>
+        <string name="leave_space_dialog_message">Are you sure you want to leave \"%1$s\"?</string>
+        <string name="chat">Chat</string>
+        <string name="people">People</string>
+        <string name="posts">Posts</string>
+        <string name="tasks">Tasks</string>
+
+
+        <!-- SECTION: Roles -->
+        <string name="admin">Admin</string>
+        <string name="guest">Guest</string>
+        <!-- Role of conference participant dialed in via telephone. -->
+        <string name="phone">Phone</string>
+        <string name="member">Member</string>
+        <string name="anonymous">Anonymous</string>
+        <string name="anyone">anyone</string>
+
+
+        <string name="welcome_toSpaces">Welcome to spaces</string>
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="space_archived">The space has been archived externally</string>
+        <string name="remote_muted_by_message">You have been muted by %s</string>
+        <string name="all_muted">All participants have been muted.</string>
+        <string name="calling_ellipsis">Calling…</string>
+        <string name="write_a_message">Write a message…</string>
+        <string name="title_activity_send_log">SendLogActivity</string>
+
+        <string name="str_copy">Copy</string>
+        <string name="copied">Copied</string>
+        <string name="copy_link">Copy Link</string>
+        <string name="actions">Actions</string>
+        <string name="no_actions">No actions</string>
+        <string name="active">Active</string>
+        <string name="sharing_screen">Sharing Screen</string>
+        <string name="is_sharing_screen">%s is sharing screen</string>
+        <string name="hide">Hide</string>
+        <string name="show">Show</string>
+        <string name="all_tasks">All Tasks</string>
+        <string name="view">View:</string>
+        <string name="assigned_to_me">assigned to me</string>
+        <string name="incomplete_tasks">incomplete tasks</string>
+        <string name="completed_tasks">completed tasks</string>
+        <string name="title">Title</string>
+        <string name="completed">Completed</string>
+        <string name="description">Description</string>
+        <string name="activity">Activity</string>
+        <string name="empty">Empty</string>
+
+
+    </resources>

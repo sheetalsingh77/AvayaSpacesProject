@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".kotlinVideoStreaming.VideoStreamingActivity">
+
+    <LinearLayout
+        android:id="@+id/login_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/guest_login_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8"
+                android:hint="@string/guest_login"
+                android:maxLength="512"
+                android:padding="@dimen/dimen_8"
+                android:selectAllOnFocus="true" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/display_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8"
+                android:hint="@string/enter_your_name"
+                android:inputType="textPersonName"
+                android:maxLength="512"
+                android:padding="@dimen/dimen_8"
+                android:selectAllOnFocus="true" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/join_as_guest_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/joining_as_guest"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:theme="@style/SignInButton" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/user_pass_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8"
+                android:hint="@string/user_pass_login"
+                android:maxLength="512"
+                android:padding="@dimen/dimen_8"
+                android:selectAllOnFocus="true" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8"
+                android:hint="@string/username_hint"
+                android:inputType="textPersonName"
+                android:maxLength="512"
+                android:padding="@dimen/dimen_8"
+                android:selectAllOnFocus="true" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:padding="@dimen/dimen_8"
+                android:text="" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/user_pass_login_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:enabled="false"
+                android:text="@string/sign_in"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:theme="@style/SignInButton" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/oauth_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8"
+                android:hint="@string/oauth_login"
+                android:maxLength="512"
+                android:padding="@dimen/dimen_8"
+                android:selectAllOnFocus="true" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sign_in_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:theme="@style/SignInButton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/meeting_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/meeting_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/meeting_url" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/meeting_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8"
+                android:hint="@string/meeting_pin_hint"
+                android:inputType="number"
+                android:padding="@dimen/dimen_8"
+                android:text="" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/connect_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/connect"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:theme="@style/SignInButton" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sign_out"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/sign_out"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:theme="@style/SignInButton" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

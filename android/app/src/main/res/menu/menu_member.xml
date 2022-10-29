@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_allow_unmute"
+        android:title="@string/allow_unmute" />
+
+<!--    <item-->
+<!--        android:id="@+id/item_raise_hand"-->
+<!--        android:title="@string/raise_hand" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/item_lower_hand"-->
+<!--        android:title="@string/lower_hand" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/item_make_admin"-->
+<!--        android:title="@string/make_admin" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/item_make_member"-->
+<!--        android:title="@string/make_member" />-->
+
+    <item
+        android:id="@+id/item_chat"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/item_remove"
+        android:title="@string/remove" />
+
+    <item
+        android:id="@+id/item_leave"
+        android:title="@string/leave_space" />
+
+    <item
+        android:id="@+id/item_its_me"
+        android:title="@string/its_me"
+        android:enabled="false"/>
+
+</menu>

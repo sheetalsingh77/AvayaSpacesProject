@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="memberpic">48dp</dimen>
+    <dimen name="recycler_fab_offset">80dp</dimen>
+    <dimen name="call_avatar_dimensions">176dp</dimen>
+    <dimen name="btn_height_round">36dp</dimen>
+</resources>

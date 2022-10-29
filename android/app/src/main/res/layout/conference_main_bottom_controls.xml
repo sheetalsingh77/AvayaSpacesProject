@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/controls_bottom_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:animateLayoutChanges="true"
+    android:background="@color/lightGray"
+    android:padding="2dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="90dp"
+    app:layout_behavior="com.avaya.spaces.conference.ui.AutoCloseBottomSheetBehavior"
+    tools:behavior_peekHeight="250dp"
+    tools:showIn="@layout/avconf_controls"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <ImageView
+        android:id="@+id/av_control_pull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:src="@drawable/ic_bottom_bar_pull_white_36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <com.avaya.spacescsdk.services.call.ui.ConferenceButton
+        android:id="@+id/av_control_hangup"
+        style="@style/conference_button"
+        android:drawableTop="@drawable/ic_call_end"
+        android:maxWidth="120dp"
+        android:text="@string/leave"
+        app:layout_constraintEnd_toStartOf="@+id/av_control_sharescreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/av_control_pull" />
+
+    <com.avaya.spacescsdk.services.call.ui.ConferenceButton
+        android:id="@+id/av_control_sharescreen"
+        style="@style/conference_button"
+        android:drawableTop="@drawable/ic_screenshare_on_selector"
+        android:maxWidth="120dp"
+        android:text="@string/share"
+        app:layout_constraintEnd_toStartOf="@+id/av_control_video"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/av_control_hangup"
+        app:layout_constraintTop_toBottomOf="@id/av_control_pull" />
+
+    <com.avaya.spacescsdk.services.call.ui.ConferenceButton
+        android:id="@+id/av_control_video"
+        style="@style/conference_button"
+        android:drawableTop="@drawable/ic_video_off"
+        android:maxWidth="120dp"
+        android:text="@string/disallow"
+        app:layout_constraintEnd_toStartOf="@+id/av_control_mic"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/av_control_sharescreen"
+        app:layout_constraintTop_toBottomOf="@id/av_control_pull" />
+
+    <com.avayaspacesproject.ui.conference.MicMuteControl
+        android:id="@+id/av_control_mic"
+        style="@style/conference_button"
+        android:drawableTop="@drawable/ic_mic_muted"
+        android:maxWidth="120dp"
+        android:text="@string/unmute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/av_control_video"
+        app:layout_constraintTop_toBottomOf="@id/av_control_pull" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/second_row_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="av_control_hangup,av_control_sharescreen,av_control_video,av_control_mic" />
+
+    <com.avaya.spacescsdk.services.call.ui.ConferenceButton
+        android:id="@+id/av_control_recording"
+        style="@style/conference_button"
+        android:enabled="false"
+        android:maxWidth="120dp"
+        android:text="@string/record"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/av_control_hangup"
+        app:layout_constraintTop_toBottomOf="@+id/second_row_barrier"
+        android:drawableTop="@drawable/ic_record"
+        tools:visibility="visible" />
+
+    <com.avaya.spacescsdk.services.call.ui.ConferenceButton
+        android:id="@+id/av_control_route"
+        style="@style/conference_button"
+        android:drawableTop="@drawable/ic_audio_speaker"
+        android:maxWidth="120dp"
+        android:text="@string/speaker"
+        app:layout_constraintStart_toStartOf="@+id/av_control_video"
+        app:layout_constraintTop_toBottomOf="@+id/second_row_barrier" />
+
+    <com.avaya.spacescsdk.services.call.ui.ConferenceButton
+        android:id="@+id/av_control_switch_camera"
+        style="@style/conference_button"
+        android:drawableTop="@drawable/ic_switch_video"
+        android:maxWidth="120dp"
+        android:text="@string/flip"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="@+id/av_control_mic"
+        app:layout_constraintTop_toBottomOf="@+id/second_row_barrier" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/av_control_mute_all"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:foregroundTint="@color/colorPrimary"
+        android:minWidth="160dp"
+        android:text="@string/mute_all"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:icon="@drawable/ic_mic_muted"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/av_control_switch_camera"
+        app:strokeColor="@color/colorPrimary" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
