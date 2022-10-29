@@ -15,7 +15,7 @@ class StreamManager(reactContext: ReactApplicationContext) : ReactContextBaseJav
 
     @ReactMethod
     fun playVideoStream(videoTitle: String, videoUrl: String) {
-        val intent = Intent(reactApplicationContext, VideoStreamingActivity::class.java)
+        val intent = Intent(reactApplicationContext, LoginActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("videoTitle", videoTitle)
         intent.putExtra("videoUrl", videoUrl)
